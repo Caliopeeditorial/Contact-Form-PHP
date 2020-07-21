@@ -26,19 +26,19 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
                 <h3>Contact Form</h3>
                 <form action="contact.php" method="post">
                     <div class="form-group">
-                        <label for="name">Your Name *</label>
+                        <label for="name">Nombre *</label>
                         <input type="text" name="name" autocomplete="off" class="form-control" placeholder="Enter Name" <?php echo isset ($fields['name'])? 'value="'.e($fields['name']).'"':''?>>
                     </div>
                     <div class="form-group">
-                        <label for="email">Your Email address * </label>
+                        <label for="email">Tu Gmail</label>
                             <input type="email" name="email" autocomplete="off" class="form-control" placeholder="Enter Email"<?php echo isset ($fields['email'])? 'value="'.e($fields['email']).'"':''?>>
                     </div>
                     <div class="form-group" >
-                        <label for="message">Your Message *</label>
+                        <label for="message">De que trata tu historia *</label>
                             <textarea class="form-control" rows="8" id="comment" name="message"<?php echo isset ($fields['message'])? e($fields['message']):''?>></textarea>
                         <br>
 
-                        <input type="submit" value="Send" class="form-control" class="btn btn-primary">
+                        <input type="Enviar" value="Send" class="form-control" class="btn btn-primary">
                     </div>
                     <p class="muted">* means a required field</p>
                 </form>
